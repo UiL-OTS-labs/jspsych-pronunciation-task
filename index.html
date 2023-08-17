@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio production template</title>
+
+        <meta charset="UTF-8">
+
+        <script src="https://web-experiments.lab.hum.uu.nl/jspsych/7.1.2/jspsych.js"></script>
+        <script src="https://web-experiments.lab.hum.uu.nl/jspsych/7.1.2/plugin-html-keyboard-response.js"></script>
+        <script src="https://web-experiments.lab.hum.uu.nl/jspsych/7.1.2/plugin-html-button-response.js"></script>
+        <script src="https://web-experiments.lab.hum.uu.nl/jspsych/7.1.2/plugin-html-audio-response.js"></script>
+        <script src="https://web-experiments.lab.hum.uu.nl/jspsych/7.1.2/plugin-initialize-microphone.js"></script>
+        <script src="https://web-experiments.lab.hum.uu.nl/jspsych/7.1.2/plugin-survey-html-form.js"></script>
+        <script src="https://web-experiments.lab.hum.uu.nl/jspsych/7.1.2/plugin-survey-multi-choice.js"></script>
+        <script src="https://web-experiments.lab.hum.uu.nl/jspsych/7.1.2/plugin-survey-multi-select.js"></script>
+
+        <!-- Generic jspsych style sheets -->
+        <link href="https://web-experiments.lab.hum.uu.nl/jspsych/7.1.2/jspsych.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Uil OTS libraries -->
+        <script src="https://web-experiments.lab.hum.uu.nl/jspsych/uil-utils/0.1/jspsych-uil-utils.js"></script>
+        <link href="https://web-experiments.lab.hum.uu.nl/jspsych/uil-utils/0.1/fonts.css" rel="stylesheet" type="text/css"/>
+
+        <!-- template specific plugins -->
+        <script src="plugins/custom.js"></script>
+
+        <!-- Uil OTS scripts -->
+        <script src="globals.js"></script>
+        <script src="consent.js"></script>
+        <script src="instructions.js"></script>
+        <script src="stimuli.js"></script>
+        <script src="survey.js"></script>
+
+        <script src="main.js"></script>
+        <style>
+            .jspsych-survey-multi-choice-text {
+                text-align: left !important;
+            }
+        </style>
+
+
+    </head>
+    <body></body>
+    <script>
+        // see main.js for the main function and experiment timeline
+        window.addEventListener('load', main);
+    </script>
+</html>
